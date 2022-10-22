@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	checkItems();
 	function checkItems() {
 		const triggetBottom = window.innerHeight / 5 * 4;
-		console.log(triggetBottom);
 		scrollItems.forEach((item) => {
 			const itemTop = item.getBoundingClientRect().top;
 
@@ -453,11 +452,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	  speed: 500,
 
-	  // autoplay: {
+	  autoplay: {
 
-	  //   delay: 2000,
+	    delay: 2000,
 
-	  // },
+	  },
 
 	  watchSlidesProgress: true,
 
@@ -476,6 +475,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	      slidesPerView: 1,
 
 	      centeredSlides: true,
+
+	      spaceBetween: 0,
 
 	    },
 
